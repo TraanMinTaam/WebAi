@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Canela';
+  src: url('/fonts/Canela-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Favorit';
+  src: url('/fonts/Favorit-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+.font-canela {
+  font-family: 'Canela', serif;
+}
+
+.font-favorit {
+  font-family: 'Favorit', system-ui, sans-serif;
+} 

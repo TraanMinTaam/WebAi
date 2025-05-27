@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Canela Text';
+  src: url('/fonts/CanelaText-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Favorit Pro';
+  src: url('/fonts/FavoritPro-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased;
+    margin: 0;
+    padding: 0;
+    font-family: 'Favorit Pro', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.025em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Canela Text', serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+
+:root {
+  font-family: 'Favorit Pro', system-ui, sans-serif;
+}
+
+.font-canela {
+  font-family: 'Canela Text', serif;
+}
+
+.font-favorit {
+  font-family: 'Favorit Pro', system-ui, sans-serif;
+}
